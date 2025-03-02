@@ -9,24 +9,24 @@ from gestio_vendes import mostrar_interficie_vendes
 root = tk.Tk()
 root.title("CRM/ERP - Gestió Empresarial")
 root.geometry("1000x600")
-root.configure(bg="#2C3E50")
+root.configure(bg="#ECECEC")
 
 # Barra de navegació
-sidebar = tk.Frame(root, width=200, bg="#34495E", relief="sunken", borderwidth=2)
+sidebar = tk.Frame(root, width=200, bg="#F6F8FA", relief="sunken", borderwidth=2)
 sidebar.pack(expand=False, fill="y", side="left", anchor="nw")
 
 # Botons de navegació
 seccions = ["Inici", "Gestió de Vendes", "Gestió de Personal", "Gestió de Clients", "Gestió d'Inventari", "Interfície de Vendes"]
 for section in seccions:
     btn = tk.Button(
-        sidebar, text=section, bg="#34495E", fg="black", relief="flat",
+        sidebar, text=section, bg="#F6F8FA", fg="black", relief="flat",
         font=("Arial", 10), activeforeground="white",
         command=lambda sec=section: mostrar_seccio(sec)
     )
     btn.pack(fill="x", pady=5)
 
 
-main_frame = tk.Frame(root, bg="#34495E")
+main_frame = tk.Frame(root, bg="#ECECEC")
 main_frame.pack(expand=True, fill="both", side="right")
 
 # Funció per canviar entre seccions
@@ -51,7 +51,7 @@ def mostrar_seccio(seccio):
 def mostrar_inici():
     for widget in main_frame.winfo_children():
         widget.destroy()
-    tk.Label(main_frame, text="Benvingut al CRM/ERP", font=("Arial", 16, "bold"), bg="#34495E", fg="white").pack(pady=20)
+    tk.Label(main_frame, text="Benvingut al CRM/ERP", font=("Arial", 16, "bold"), bg="#F6F8FA", fg="black").pack(pady=20)
 
 # Mostra la pantalla d'inici en arrencar el programa
 mostrar_inici()

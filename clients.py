@@ -11,7 +11,7 @@ def mostrar_seccio_clients(main_frame):
         widget.destroy()
 
     # Títol principal
-    tk.Label(main_frame, text="Gestió de Clients", font=("Arial", 16, "bold"), bg="#34495E", fg="white").pack(pady=10)
+    tk.Label(main_frame, text="Gestió de Clients", font=("Arial", 16, "bold"), bg="#F6F8FA", fg="white").pack(pady=10)
 
     # Frame per a clients particulars
     frame_particulars = tk.LabelFrame(main_frame, text="Clients Particulars", font=("Arial", 12, "bold"))

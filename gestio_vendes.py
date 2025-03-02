@@ -7,7 +7,7 @@ def mostrar_interficie_vendes(main_frame):
     for widget in main_frame.winfo_children():
         widget.destroy()
 
-    tk.Label(main_frame, text="Registrar vendes", font=("Arial", 16, "bold"), bg="#34495E", fg="white").pack(pady=10)
+    tk.Label(main_frame, text="Registrar vendes", font=("Arial", 16, "bold"), bg="#F6F8FA", fg="black").pack(pady=10)
 
     # Frame per als camps d'entrada
     entrada_frame = tk.Frame(main_frame)

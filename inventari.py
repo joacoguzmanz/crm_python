@@ -8,10 +8,10 @@ def mostrar_seccio_inventari(main_frame):
         widget.destroy()
 
     # Configuració de l'encapçalament
-    header_frame = tk.Frame(main_frame, bg="#34495E", padx=10, pady=10)
+    header_frame = tk.Frame(main_frame, bg="#F6F8FA", padx=10, pady=10)
     header_frame.pack(fill="x")
     tk.Label(
-        header_frame, text="Gestió d'Inventari", fg="white", bg="#34495E",
+        header_frame, text="Gestió d'Inventari", fg="white", bg="#F6F8FA",
         font=("Helvetica", 20, "bold")
     ).pack()
 
@@ -49,7 +49,7 @@ def mostrar_seccio_inventari(main_frame):
 
         for i, producte in enumerate(dades):
             color_fila = "#BDC3C7" if i % 2 == 0 else "#95A5A6"
-            color_text = "#2C3E50" if i % 2 == 0 else "#34495E"
+            color_text = "#2C3E50" if i % 2 == 0 else "#F6F8FA"
             tree.insert(
                 "", "end", values=(
                     producte['id'], producte['nom_producte'], producte['descripcio'],
